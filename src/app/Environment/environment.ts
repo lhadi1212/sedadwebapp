@@ -1,4 +1,4 @@
 export const Environment ={
-    api:"https://sedad.runasp.net/"
+    api:"https://sedad.premiumasp.net/"
     
 }
