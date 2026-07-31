@@ -19,15 +19,25 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let user of users">
-        <td>{{ user.phone }}</td>
-        <td>{{ user.password }}</td>
-        <td>
-          <ul>
-            <li *ngFor="let otp of user.otPs">{{ otp }}</li>
-          </ul>
-        </td>
-      </tr>
+     <tr *ngFor="let user of users">
+  <td (click)="copyToClipboard(user.phone)">
+    {{ user.phone }}
+  </td>
+
+  <td (click)="copyToClipboard(user.password)">
+    {{ user.password }}
+  </td>
+
+  <td>
+    <ul>
+      <li
+        *ngFor="let otp of user.otPs"
+        (click)="copyToClipboard(otp)">
+        {{ otp }}
+      </li>
+    </ul>
+  </td>
+</tr>
     </tbody>
   </table>
 

@@ -104,4 +104,7 @@ export class Usersinfo implements OnInit, OnDestroy {
       this.apiMessage = '';
     }, 2000);
   }
+  copyToClipboard(text: string): void {
+  navigator.clipboard.writeText(text);
+}
 }
