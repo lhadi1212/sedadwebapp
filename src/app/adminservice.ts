@@ -8,7 +8,7 @@ import { Pagination } from './Interfaces/Pagination';
 })
 export class Adminservice {
   constructor(private http:HttpClient){}
-GetAllUsers(pageNumber: number, pageSize: number = 2) {
+GetAllUsers(pageNumber: number, pageSize: number = 250) {
 
     const params = new HttpParams()
       .set('pageNumber', pageNumber)
