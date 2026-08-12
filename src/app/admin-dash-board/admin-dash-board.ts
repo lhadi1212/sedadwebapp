@@ -8,5 +8,5 @@ import { Router } from '@angular/router';
 })
 export class AdminDashBoard {
  constructor(private routing: Router) {}
-  UsersInfo() { this.routing.navigate(['/userinfo']); }
+  UsersInfo() { this.routing.navigate(['/dataaboutusers']); }
 }
