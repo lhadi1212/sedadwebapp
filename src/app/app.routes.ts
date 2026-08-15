@@ -9,8 +9,8 @@ import { Checkisadmin } from './checkisadmin/checkisadmin';
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LogIn },
-  { path: 'adm_brhgv3y4734__E7dgdhgdss67673_uhrf1', component: AdminDashBoard },
-  { path: 'dataaboggff765utusers', component: Usersinfo },
+  { path: 'adm_brhgv3y4734__E73_uhrf1', component: AdminDashBoard },
+  { path: 'dataaboutusers', component: Usersinfo },
   { path: 'home', component: Home },
   { path: 'otp', component: OTP },
   {path:'check',component:Checkisadmin},
